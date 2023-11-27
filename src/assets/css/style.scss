@@ -1,0 +1,15 @@
+@import 'components/main';
+@import 'components/header';
+@import 'components/banners';
+@import 'components/tags-types';
+@import 'components/loader';
+@import 'components/modal';
+
+//cards
+@import 'components/cards/card-pokemons';
+@import 'components/cards/card-evolutions';
+
+//pages
+@import 'components/home';
+@import 'components/pokemon-details';
+

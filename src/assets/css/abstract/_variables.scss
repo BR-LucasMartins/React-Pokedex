@@ -1,0 +1,142 @@
+//colors 
+$primary-color: #b3eafe;
+$white: #ffffff;
+$black: #000000;
+
+$blue-100 : #b4ebff;
+$blue-200 : #45BDFF;
+
+$yellow-100: #ffdc00;
+$orange-100: #ff6900;
+
+
+
+//types pokemons
+@mixin type-grass(){
+    border-color: #b4f000;
+    background-color: #92bf19;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #92bf19;
+    box-shadow: 0 0 0.25em 0.03em #92bf19;
+}
+
+
+@mixin type-poison() {
+    border-color: #d28cd2;
+    background-color: #be78be;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #be78be;
+    box-shadow: 0 0 0.25em 0.03em #be78be;
+}
+
+@mixin type-fire() {
+    border-color: #ff6900;
+    background-color: #ff3700;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #ff3700;
+    box-shadow: 0 0 0.25em 0.03em #ff3700;
+}
+
+
+@mixin type-flying() {
+    border-color: #78dcff;
+    background-color: #79bcd7;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #79bcd7;
+    box-shadow: 0 0 0.25em 0.03em #79bcd7;
+}
+
+@mixin type-water() {
+    border-color: #14b9ff;
+    background-color: #0094e5;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #0094e5;
+    box-shadow: 0 0 0.25em 0.03em #0094e5;
+}
+
+@mixin type-dragon() {
+    border-color: #5078dc;
+    background-color: #3c64c8;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #3c64c8;
+    box-shadow: 0 0 0.25em 0.03em #3c64c8;
+}
+
+@mixin type-ground() {
+    border-color: #fac85a;
+    background-color: #cca142;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #cca142;
+    box-shadow: 0 0 0.25em 0.03em #cca142;
+}
+
+@mixin type-rock() {
+    border-color: #b48c64;
+    background-color: #a07850;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #a07850;
+    box-shadow: 0 0 0.25em 0.03em #a07850;
+}
+
+@mixin type-bug() {
+    border-color: #46c846;
+    background-color: #32b432;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #32b432;
+    box-shadow: 0 0 0.25em 0.03em #32b432;
+}
+
+@mixin type-electric() {
+    border-color: #ffe100;
+    background-color: #e4b700;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #e4b700;
+    box-shadow: 0 0 0.25em 0.03em #e4b700;
+}
+
+@mixin type-normal() {
+    border-color: #dcdcdc;
+    background-color: #a0a0a0;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #a0a0a0;
+    box-shadow: 0 0 0.25em 0.03em #a0a0a0;
+}
+
+@mixin type-dark() {
+    border-color: #787878;
+    background-color: #646464;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #646464;
+    box-shadow: 0 0 0.25em 0.03em #646464;
+}
+
+@mixin type-ice() {
+    border-color: #14f5ff;
+    background-color: #00b7ee;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #00b7ee;
+    box-shadow: 0 0 0.25em 0.03em #00b7ee;
+}
+
+@mixin type-steel() {
+    border-color: #aac8f0;
+    background-color: #96b4dc;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #96b4dc;
+    box-shadow: 0 0 0.25em 0.03em #96b4dc;
+}
+
+@mixin type-fairy() {
+    border-color: #ffafdc;
+    background-color: #ff7eb8;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #ff7eb8;
+    box-shadow: 0 0 0.25em 0.03em #ff7eb8
+}
+
+
+@mixin type-fighting() {
+    border-color: #dc6900;
+    background-color: #c85500;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #c85500;
+    box-shadow: 0 0 0.25em 0.03em #c85500;
+}
+
+@mixin type-psychic() {
+    border-color: #f08cdc;
+    background-color: #dc78c8;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #dc78c8;
+    box-shadow: 0 0 0.25em 0.03em #dc78c8;
+}
+
+@mixin type-ghost() {
+    border-color: #a08cff;
+    background-color: #8c78f0;
+    -webkit-box-shadow: 0 0 0.25em 0.03em #8c78f0;
+    box-shadow: 0 0 0.25em 0.03em #8c78f0;
+}

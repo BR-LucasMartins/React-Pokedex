@@ -1,0 +1,132 @@
+.card-evolution{
+    width: 9.5vw;
+    display: flex;
+    flex-direction: column;
+    
+    &-image{
+        background: url("../images/resources/evolutions_pokemon_bg.png") 50% 50% no-repeat;
+        background-size: contain;
+        vertical-align: top;
+
+        img{
+            width: 90%;
+            padding: 0.5em;
+        }
+    }
+
+    &-content-information{
+        width: 100%;
+
+        &-name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1em;
+    
+            .pokemon-id{
+                font-size: 1.4vw;
+                color: $primary-color;
+            }
+    
+            .pokemon-name{
+                font-size: 1.4vw;
+                color: $white;
+                text-transform: capitalize;
+            }
+        }
+    
+        &-types{
+            .types{
+                flex-direction: column;
+                li{
+                    width: 100%;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .card-evolution{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+
+        &-image{
+            width: 40%;
+        }
+
+        &-content-information{
+            width: 60%;
+
+            &-name{
+                align-items: baseline;
+                margin-left: 20%;
+                .pokemon-id{
+                    font-size: 1.3em;
+                }
+    
+                .pokemon-name{
+                    font-size: 1.3em;
+                }
+            }
+
+            &-types{
+                .types{
+                    li{
+                        width: 70%;
+                        height: 25px;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .card-content-evolution-variations{
+        .card-evolution{
+            width: 100%;
+            flex-direction: column;
+    
+            &-image{
+                width: 80%;
+            }
+    
+            &-content-information{
+                width: 100%;
+    
+                &-name{
+                    align-items: center;
+                    margin-left: 0;
+                    .pokemon-id{
+                        font-size: 1.3em;
+                    }
+        
+                    .pokemon-name{
+                        font-size: 1.3em;
+                    }
+                }
+    
+                &-types{
+                    .types{
+                        li{
+                            width: 100%;
+                            height: 25px;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

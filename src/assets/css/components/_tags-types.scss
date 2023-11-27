@@ -1,0 +1,92 @@
+@import '../abstract/variables';
+
+.types{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+
+    .type{
+        width: 45%;
+        height: auto;
+        position: relative;
+        border-radius: 1em;
+        border: 1px solid #000;
+        margin: 0.5em 0.25em;
+        color: white;
+        text-align: center;
+        font-size: 1.1em;
+        text-transform: capitalize;
+
+        &_grass{
+            @include type-grass;
+        }
+        &_poison{
+            @include type-poison;
+        }
+        &_fire{
+            @include type-fire 
+        }
+        &_flying{
+            @include type-flying
+        }
+        &_fairy{
+            @include type-fairy
+        }
+        &_fighting{
+            @include type-fighting
+        }
+        &_ice{
+            @include type-ice
+        }
+        &_psychic{
+            @include type-psychic
+        }
+        &_ghost{
+            @include type-ghost
+        }
+        &_dragon{
+            @include type-dragon
+        }
+        &_rock{
+            @include type-rock
+        }
+        &_ground{
+            @include type-ground
+        }
+        &_steel{
+            @include type-steel
+        }
+        &_normal{
+            @include type-normal
+        }
+        &_electric{
+            @include type-electric
+        }
+        &_bug{
+            @include type-bug;
+        }
+        &_water{
+            @include type-water
+        }
+        &_dark{
+            @include type-dark
+        }
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .types{
+        .type{
+            font-size: 1.5vw;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .types{
+        .type{
+            font-size: 3vw;
+        }
+    }
+}

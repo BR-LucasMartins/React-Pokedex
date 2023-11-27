@@ -1,0 +1,87 @@
+.list-pokemons {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 50vh;
+    margin-bottom: 2em;
+}
+
+.card-pokemon-wrapper {
+    width: 25%;
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.card-pokemon {
+    background: transparent url("../images/resources/list_pokemon_bg.png") 50% 50% no-repeat;
+    background-size: auto 100%;
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 60%;
+        left: 20%;
+        top: 8%;
+        vertical-align: top;
+    }
+
+
+    &-body {
+        position: absolute;
+        left: 10%;
+        top: 57%;
+
+        span {
+            font-size: 1.3em;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.9em;
+            color: $white;
+            text-transform: capitalize;
+        }
+    }
+
+    &-footer{
+        position: absolute;
+        top: 80%;
+        width: 100%;
+    }
+
+    &::after {
+        content: "";
+        height: 0;
+        display: block;
+        padding-top: 150%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .card-pokemon-wrapper {
+        width: 50%;
+    }
+
+    .card-pokemon {
+        &-body {
+            span{
+                font-size: 4vw;
+            }
+            h2 {
+                font-size: 5vw;
+            }
+        }
+    }
+
+
+}
+

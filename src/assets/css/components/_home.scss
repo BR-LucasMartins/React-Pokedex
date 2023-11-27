@@ -1,0 +1,136 @@
+@import '../abstract/variables';
+.form{
+    padding:  3em 2em;
+    display: flex;
+    align-items: end;
+    gap: 1em;
+
+    form{
+        width: 70%;
+    }
+
+    span{
+        color: $primary-color;
+        text-shadow: 0 0 5px #b3eafe, 0 0 5px #b3eafe;
+        font-size: 1.5vw;
+    }
+
+    .input-wrapper{
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+
+        input{
+            width: 100%;
+            height: 50px;
+            border-radius: 50px;
+            background: linear-gradient(180deg,#f0f0f0,#fff 15%,#fff 85%,#f0f0f0); 
+            outline: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 0 2.5em;
+
+            &::placeholder{
+                opacity: 0;
+            }
+        }
+
+        .btn-submit{
+            position: absolute;
+            right: 0;
+            top: 1px;
+            height: 48px;
+            width: 15%;
+            border: none;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+            background-color: $blue-100;
+
+            svg{
+                width: 60%;
+                height: 60%;
+                color: $blue-200;
+            }
+        }
+    }
+
+    .btn-search-randon{
+        display: flex;
+        gap: 15px;
+        width: 30%;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        background-color: $yellow-100;
+        box-shadow: 0 0 3px 3px $yellow-100;
+        border: none;
+        border-radius: 50px;
+        color: $white;
+        font-size: 1.5vw;
+        cursor: pointer;
+
+        svg{
+            color: $white;
+        }
+    }
+}
+
+.btn-show-more{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: $yellow-100;
+        border: 1px solid $yellow-100;
+        color: $black;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $orange-100;
+            border: 1px solid $orange-100;
+            color: $white;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .form{
+        padding:  1emm;
+        flex-direction: column;
+        align-items: baseline;
+    
+        form{
+            width: 100%;
+        }
+    
+        span{
+            font-size: 4vw;
+        }
+    
+        .input-wrapper{
+            
+            input{
+                padding: 0 1.5em;
+            }
+
+            .btn-submit{
+                width: 20%;
+                top: 2px;
+                height: 46px;
+            }
+        }
+    
+        .btn-search-randon{
+            width: 100%;
+            font-size: 4vw;
+        }
+    }      
+}
